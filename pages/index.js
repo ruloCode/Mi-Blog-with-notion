@@ -8,9 +8,9 @@ export const databaseId = process.env.NOTION_DATABASE_ID;
 
 export default function Home({ posts }) {
   return (
-    <div>
+    <>
       <Head>
-        <title>Notion Next.js blog</title>
+        <title>RuloCode.com</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -86,7 +86,7 @@ export default function Home({ posts }) {
           })}
         </ol>
       </main>
-    </div>
+    </>
   );
 }
 

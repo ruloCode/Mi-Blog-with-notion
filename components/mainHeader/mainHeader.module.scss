@@ -1,0 +1,56 @@
+.navContainer {
+    width: 100vw;
+    background: #0D1116;
+
+    border: 1px solid blue($color: #000000);
+    position: fixed;
+
+    z-index: 3;
+
+
+}
+
+.nav {
+  height: 6rem;
+  display: grid;
+  grid-template-columns: auto 60px;
+  width: 100%;
+
+  z-index: 10;
+  color: #fff;
+  position: relative;
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media (min-width: 768px) {
+  }
+
+  --wrapper-width: 95%;
+
+  padding-right: calc(50vw - (var(--wrapper-width) / 2));
+  padding-left: calc(50vw - (var(--wrapper-width) / 2));
+
+  &--hasBackground {
+    background-color: #f9fafb;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    --wrapper-width: 1216px;
+  }
+
+  @media only screen and (min-width: 1504px) {
+    --wrapper-width: 1440px;
+  }
+}
+
+/*Styling logo*/
+.logo {
+    padding: 1vh 1vw;
+    text-align: center;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+ 
+}
+
