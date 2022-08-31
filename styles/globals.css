@@ -21,7 +21,7 @@ body {
 
 body {
   background-color: #202833;
-  color: black;
+  color: #fff;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -93,3 +93,8 @@ button {
 }
 
 
+.flex {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}

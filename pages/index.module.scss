@@ -1,6 +1,4 @@
-
 .container {
-  padding: 0 20px;
   max-width: 700px;
 }
 
@@ -11,9 +9,15 @@
   border: 1px solid blue;
 }
 
-.header {
-  margin-bottom: 50px;
-  margin-top: 76px;
+
+.Flex {
+  display: flex;
+  justify-content: center;
+}
+.imageContainer {
+  width: 250px;
+  height: 255px;
+  position: relative;
 }
 
 .header p {
@@ -65,4 +69,19 @@
   margin-top: 0;
   margin-bottom: 12px;
   opacity: 0.65;
+}
+
+.image-container {
+  width: 100%;
+
+  > div {
+    position: unset !important;
+  }
+
+  .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
 }
