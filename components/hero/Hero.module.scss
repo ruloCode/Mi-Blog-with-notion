@@ -1,0 +1,52 @@
+@import '../../styles/_variables.scss';
+
+.hero {
+  margin-top: 60px;
+}
+
+.imageContainer {
+  width: 250px;
+  height: 255px;
+  position: relative;
+}
+
+.header p {
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+.bg1 {
+  width: 215px;
+  height: 104px;
+  position: absolute;
+  left: 0;
+  top: -15%;
+}
+.bg2 {
+  width: 215px;
+  height: 104px;
+  position: absolute;
+  right: 5%;
+  bottom: 15%;
+}
+
+.ocupation {
+  color: $base-color;
+}
+
+$breakpoints: (
+  sm: 540px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+);
+
+@mixin media-up($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media screen and (min-width: map-get($breakpoints,$breakpoint )) {
+      @content;
+    }
+  } @else {
+    @warn "The value '#{breakpoint}' has not been declared as a breakpoint";
+  }
+}

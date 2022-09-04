@@ -1,26 +1,24 @@
 
+@import 'variables';
+@import 'mixins';
 
-*{
-  margin: 0;
-  padding: 0;
-  letter-spacing: 1px;
-  font-weight: 300;
-}
 
-html,
-body {
+
+html{
   overflow-x: hidden;
- 
+  box-sizing: border-box;
   font-family: "Roboto";
   font-size: 62.5%;
   font-size: 10px;
-
-
-  
+}
+* , *::before, *::after{
+  box-sizing: inherit;
+  margin: 0; padding: 0;
 }
 
 body {
   background-color: #202833;
+  font-family: "Roboto", sans-serif;
   color: #fff;
 }
 
@@ -36,13 +34,25 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
 
-h1 {
-  font-weight: 800;
-}
+
+p  {
+  font-size: $font-p;
+ }
+
+ h1 { 
+  font-size: $font-h1;
+ }
+ h2 { 
+  font-size: $font-h2;
+ }
+ h3 { 
+  font-size: $font-h3;
+  font-weight: lighter;
+ }
+
+
+
 
 
 

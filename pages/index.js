@@ -1,10 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import { getDatabase } from "../lib/notion";
 import { Text } from "./[id].js";
 import ProfilePhoto from "../assets/rulo.png";
+
 import styles from "./index.module.scss";
+import { Hero } from "../components/hero/Hero";
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
@@ -17,25 +18,7 @@ export default function Home({ posts }) {
       </Head>
 
       <main className={styles.container}>
-        <header className={styles.header}>
-          <div className='flex'>
-            <div className={styles.imageContainer}>
-              <Image
-                alt="Mountains"
-                src={ProfilePhoto}
-                layout="fill"
-                objectFit="contain"
-              />
-            </div>
-          </div>
-          <h1>Hi, I am Rulo</h1>
-          <p>Web developer</p>
-          <p>
-            Creating the next web generation. I want to make sure that the
-            internet is a safe, satisfying and secure place for everyone.
-          </p>
-          <button type="button">Let's Talk</button>
-        </header>
+       <Hero />
 
         {/* <h2 className={styles.heading}>All Posts</h2>
         <ol className={styles.posts}>
