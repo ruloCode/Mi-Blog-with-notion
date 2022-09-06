@@ -1,13 +1,56 @@
-@import '../../styles/_variables.scss';
+@import "../../styles/_variables.scss";
 
 .hero {
   margin-top: 60px;
+  &-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 3.5rem;
+    align-items: center;
+    position: relative;
+  }
+  &-social {
+    display: grid;
+    position: absolute;
+    top: 10%;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+    &-icon {
+      font-size: 2rem;
+      color: $color-text;
+    }
+  }
+  &-img {
+    width: 200px;
+    height: 205px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  &-data {
+    grid-column: 1/3;
+  }
+  &-title {
+    font-size: $font-h1;
+    margin-bottom: $mb-0-75;
+
+    span {
+      color: $base-color;
+    }
+  }
+  &-subtitle {
+    color: $color-neutral;
+    font-weight:$font-semi-bold ;
+    margin-bottom: $mb-1;
+  }
+  &-description {
+    margin-bottom: $mb-3;
+
+  }
 }
 
 .imageContainer {
-  width: 250px;
-  height: 255px;
-  position: relative;
 }
 
 .header p {
@@ -27,7 +70,7 @@
   height: 104px;
   position: absolute;
   right: 5%;
-  bottom: 15%;
+  bottom: 40%;
 }
 
 .ocupation {

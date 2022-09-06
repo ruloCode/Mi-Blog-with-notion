@@ -1,19 +1,19 @@
+@import "variables";
+@import "mixins";
 
-@import 'variables';
-@import 'mixins';
-
-
-
-html{
+html {
   overflow-x: hidden;
   box-sizing: border-box;
   font-family: "Roboto";
   font-size: 62.5%;
   font-size: 10px;
 }
-* , *::before, *::after{
+*,
+*::before,
+*::after {
   box-sizing: inherit;
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -34,27 +34,20 @@ a {
   text-decoration: none;
 }
 
-
-
-p  {
+p {
   font-size: $font-p;
- }
+}
 
- h1 { 
+h1 {
   font-size: $font-h1;
- }
- h2 { 
+}
+h2 {
   font-size: $font-h2;
- }
- h3 { 
+}
+h3 {
   font-size: $font-h3;
   font-weight: lighter;
- }
-
-
-
-
-
+}
 
 /* Burget button */
 
@@ -89,8 +82,7 @@ button {
 }
 
 .x .line {
-  stroke: #F77322;
-  
+  stroke: #f77322;
 }
 
 .x #middle {
@@ -102,9 +94,52 @@ button {
   stroke-dashoffset: -45;
 }
 
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section {
+  padding: 2rem 0 4rem;
+}
 
-.flex {
-  display: flex;
-  justify-content:center;
-  align-items:center;
+.section__title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+.button {
+  font-size: 18px;
+  background: $color-action;
+  color: $color-text;
+  padding: 0.75rem 3rem;
+  border-radius: 0.5rem;
+}
+
+/*==================== LAYOUT ====================*/
+.container {
+  max-width: 768px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
 }

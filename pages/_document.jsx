@@ -19,7 +19,10 @@ export default class MyDocument extends Document {
           />
           {/* Font Awesome */}
           <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+          
+          {/* iconScout  */}
          
+          <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
         </Head>
         <body>
           <Main />
