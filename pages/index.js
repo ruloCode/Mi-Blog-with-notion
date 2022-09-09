@@ -6,6 +6,7 @@ import ProfilePhoto from "../assets/rulo.png";
 
 import styles from "./index.module.scss";
 import { Hero } from "../components/hero/Hero";
+import { About } from "../components/about/About";
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
@@ -19,6 +20,8 @@ export default function Home({ posts }) {
 
       <main className={styles.container}>
        <Hero />
+
+       <About />
 
         {/* <h2 className={styles.heading}>All Posts</h2>
         <ol className={styles.posts}>

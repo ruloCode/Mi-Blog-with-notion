@@ -7,7 +7,7 @@ export const Layout = ({ children }) => {
    <>
      <MainHeader />
     
-     <div className={styles.wrapper}>
+     <div >
        <div className={styles.appContainer}>{children}</div>
     
        {/* <div>footer</div> */}
