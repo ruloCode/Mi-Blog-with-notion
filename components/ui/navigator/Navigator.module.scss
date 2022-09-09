@@ -1,8 +1,12 @@
+@import "../../../styles/_variables.scss";
+
 .navigator {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
+  z-index: $z-modal;
+  position: relative;
 
   ul {
     display: flex;
