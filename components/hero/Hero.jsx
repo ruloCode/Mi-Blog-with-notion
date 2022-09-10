@@ -28,11 +28,9 @@ export const Hero = () => {
           />
         </div>
       
-        <div
-        className={getClasses({ classes: "container grid", styles, stylesClass: "hero-container" })}
-        >
+       
           <div className={styles["hero-content"]}>
-            <div className={styles["hero-social"]}>
+            {/* <div className={styles["hero-social"]}>
               <a href="" target="_blank" className={styles["hero-social-icon"]}>
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
@@ -42,7 +40,7 @@ export const Hero = () => {
               <a href="" target="_blank" className={styles["hero-social-icon"]}>
                 <i class="fa-brands fa-twitter"></i>
               </a>
-            </div>
+            </div> */}
       
            <div className={styles["hero-img"]} >
                <Image
@@ -71,7 +69,6 @@ export const Hero = () => {
               </a>
             </div> */}
           </div>
-        </div>
       
         
       </section>

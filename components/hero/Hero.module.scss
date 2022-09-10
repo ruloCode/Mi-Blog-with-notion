@@ -1,14 +1,15 @@
 @import "../../styles/_variables.scss";
+@import "../../styles/_mixins.scss";
 
 .hero {
   margin-top: 80px;
   position: relative;
   &-content {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     padding-top: 3.5rem;
     align-items: center;
-    position: relative;
+  position: relative;
   }
   &-social {
     display: grid;
@@ -48,6 +49,18 @@
   &-description {
     margin-bottom: $mb-3;
 
+  }
+
+  @include media-up(md) {
+    &-content {
+      flex-direction: row-reverse;
+    }
+    &-data {
+      grid-column: 1/2;
+    }
+    &-img {
+     flex-grow: 2/3;
+    }
   }
 }
 
