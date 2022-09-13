@@ -6,6 +6,8 @@ import Image from "next/image";
 import styles from "./Hero.module.scss";
 import BackgroundShape from "../../assets/Fondo.svg";
 import ProfilePhoto from "../../assets/rulo.png";
+import { Button } from "../ui/button/Button";
+import { Box } from "@vitau/layout";
 
 export const Hero = () => {
   return (
@@ -31,13 +33,13 @@ export const Hero = () => {
        
           <div className={styles["hero-content"]}>
             <div className={styles["hero-social"]}>
-              <a href="" target="_blank" className={styles["hero-social-icon"]}>
+              <a href="https://www.linkedin.com/in/rulocode/" target="_blank" className={styles["hero-social-icon"]}>
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
-              <a href="" target="_blank" className={styles["hero-social-icon"]}>
+              <a href="https://github.com/ruloCode" target="_blank" className={styles["hero-social-icon"]}>
                 <i class="fa-brands fa-github"></i>
               </a>
-              <a href="" target="_blank" className={styles["hero-social-icon"]}>
+              <a href="https://twitter.com/rulo_code" target="_blank" className={styles["hero-social-icon"]}>
                 <i class="fa-brands fa-twitter"></i>
               </a>
             </div>
@@ -58,7 +60,9 @@ export const Hero = () => {
                 Creating the next web generation. I want to make sure that the
                 internet is a safe, satisfying and secure place for everyone.
               </p>
-              <a href="" className="button">Let’s Talk !</a>
+              <Box>
+                <Button handleClick={() => window.location.replace("#footer")} >Let's Talk</Button>
+              </Box>
             </div>
             {/* <div className="hero-scroll">
               <a href="#about" className={getClasses({ classes: "button button--flex", styles, stylesClass: "hero-scroll-button" })}>

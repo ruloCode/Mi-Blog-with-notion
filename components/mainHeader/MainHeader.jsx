@@ -25,7 +25,7 @@ const handleClose = async () => {
   return (
     <div className={styles.navContainer}>
       <nav className={styles.nav}>
-        <div className={styles.logo}>RuloCode.com</div>
+        <div className={styles.logo}>RuloCode</div>
         <HamburgerButton
           handleClick={handleClose}
           isOpen={openHamburger}

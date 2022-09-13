@@ -9,9 +9,9 @@ import BackgroundShape_down from "../../assets/shape_top.svg";
 
 export const About = () => {
   return (
-    <div>
+    <div id='about'>
       <section className={styles.about}>
-        <div className={styles.bg3}>
+        <div className={styles.bg1}>
           <Image
             alt="Mountains"
             src={BackgroundShape2}

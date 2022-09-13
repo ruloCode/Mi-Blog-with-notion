@@ -14,17 +14,19 @@
   &-social {
     display: grid;
     position: absolute;
-    top: 10%;
+    top: 20%;
+    left: 0;
     grid-template-columns: max-content;
     row-gap: 1rem;
+    z-index: $z-tooltip;
     &-icon {
       font-size: 2rem;
       color: $color-text;
     }
   }
   &-img {
-    width: 200px;
-    height: 205px;
+    width: 250px;
+    height: 255px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -32,10 +34,12 @@
   }
   &-data {
     grid-column: 1/3;
+
+    display: grid;
+    gap: 1.2rem;
   }
   &-title {
     font-size: $font-h1;
-    margin-bottom: $mb-0-75;
 
     span {
       color: $base-color;
@@ -44,12 +48,8 @@
   &-subtitle {
     color: $color-neutral;
     font-weight:$font-semi-bold ;
-    margin-bottom: $mb-1;
   }
-  &-description {
-    margin-bottom: $mb-3;
-
-  }
+  
 
   @include media-up(md) {
     &-content {
@@ -96,19 +96,4 @@
   color: $base-color;
 }
 
-$breakpoints: (
-  sm: 540px,
-  md: 768px,
-  lg: 1024px,
-  xl: 1280px,
-);
 
-@mixin media-up($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media screen and (min-width: map-get($breakpoints,$breakpoint )) {
-      @content;
-    }
-  } @else {
-    @warn "The value '#{breakpoint}' has not been declared as a breakpoint";
-  }
-}
