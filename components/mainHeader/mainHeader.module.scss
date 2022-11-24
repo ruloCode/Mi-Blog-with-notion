@@ -1,18 +1,17 @@
-@import '../../styles/_variables.scss';
-.navContainer {
-    width: 100vw;
-    background: #0D1116;
+@import "../../styles/_variables.scss";
+@import "../../styles/_mixins.scss";
+.headerContainer {
+  width: 100vw;
+  background: #0d1116;
 
-    border: 1px solid blue($color: #000000);
-    position: fixed;
-    top: 0;
+  border: 1px solid blue($color: #000000);
+  position: fixed;
+  top: 0;
 
-    z-index: $z-modal-2;
-
-
+  z-index: $z-modal-2;
 }
 
-.nav {
+.navContainer {
   height: 6rem;
   display: grid;
   grid-template-columns: auto 60px;
@@ -23,7 +22,11 @@
   position: relative;
 
   /* Medium devices (landscape tablets, 768px and up) */
-  @media (min-width: 768px) {
+  // @media (min-width: 768px) {
+  // }
+
+  @include media-up(md) {
+    grid-template-columns: auto auto 60px;
   }
 
   --wrapper-width: 95%;
@@ -46,12 +49,10 @@
 
 /*Styling logo*/
 .logo {
-    padding: 1vh 1vw;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 600;
- 
+  padding: 1vh 1vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
 }
-

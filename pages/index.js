@@ -22,8 +22,8 @@ export default function Home({ posts }) {
       <main className={styles.container}>
        <Hero />
 
-       <About />
-       <Portfolio />
+       {/* <About />
+       <Portfolio /> */}
 
         {/* <h2 className={styles.heading}>All Posts</h2>
         <ol className={styles.posts}>

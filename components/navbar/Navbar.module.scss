@@ -1,0 +1,23 @@
+@import "../../styles/_mixins.scss";
+.navbar {
+  list-style: none;
+
+  display: none;
+
+  @include media-up(md) {
+    display: flex;
+    display: flex;
+    align-items: center;
+    gap: var(--space);
+    justify-content: space-around;
+  }
+
+  &__item {
+    a {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+}

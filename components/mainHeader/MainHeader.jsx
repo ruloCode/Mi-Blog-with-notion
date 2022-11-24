@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Link from "next/link";
+
 import classnames from "classnames";
 import { getClasses } from "../../utils/classesFormater";
 
@@ -6,30 +8,30 @@ import styles from "./mainHeader.module.scss";
 import { HamburgerButton } from "../ui/hamburgerButton/HamburgerButton";
 import { SlideOutMenu } from "../ui/slideOutMenu/SlideOutMenu.tsx";
 import sleep from "../../utils/hooks/sleep";
+import {Navbar} from "../navbar/Navbar";
 
 export const MainHeader = () => {
   const [openHamburger, setOpenHamburger] = useState(false);
   const [hiding, setHiding] = useState(false);
-const handleClose = async () => {
-  if(openHamburger) {
-    setHiding(true);
-    await sleep(200);
+  const handleClose = async () => {
+    if (openHamburger) {
+      setHiding(true);
+      await sleep(200);
+      setOpenHamburger(!openHamburger);
+      setHiding(false);
+    }
+
     setOpenHamburger(!openHamburger);
     setHiding(false);
-  }
- 
-  setOpenHamburger(!openHamburger);
-  setHiding(false);
- 
-}
+  };
   return (
-    <div className={styles.navContainer}>
-      <nav className={styles.nav}>
+    <header className={styles.headerContainer}>
+      <div className={styles.navContainer}>
         <div className={styles.logo}>RuloCode</div>
-        <HamburgerButton
-          handleClick={handleClose}
-          isOpen={openHamburger}
-        />
+
+      <Navbar />
+      <HamburgerButton handleClick={handleClose} isOpen={openHamburger} />
+
 
         <SlideOutMenu
           title="Filtros"
@@ -43,7 +45,7 @@ const handleClose = async () => {
           hiding={hiding}
           handleClose={handleClose}
         />
-      </nav>
-    </div>
+      </div>
+    </header>
   );
 };
