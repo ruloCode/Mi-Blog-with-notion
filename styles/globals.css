@@ -1,6 +1,49 @@
-@use "./_mixins.scss";
-@import "./_variables.scss";
 
+
+:root {
+  --font-p: 1.8rem;
+  
+--font-h1: 3rem;
+--font-h2: 2.4rem;
+--font-h3: 2rem;
+
+--base-color: #06c5ff;
+
+--color-background: #202833;
+--color-background-second: #090c0f;
+
+--color-neutral: #e1e3e8;
+--color-purple: #6a70ff;
+--color-action: #06c5ff;
+--color-text: #f2f2f2;
+
+/*========== Font and typography ==========*/
+--body-font: "Roboto", sans-serif;
+
+/*========== Font weight ==========*/
+--font-medium: 500;
+--font-semi-bold: 600;
+
+/*========== z index ==========*/
+--z-tooltip: 10;
+--z-fixed: 100;
+--z-modal: 1000;
+--z-modal-2: 1001;
+
+/*========== Margenes Bottom ==========*/
+/* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+--mb-0-25: 0.25rem;
+--mb-0-5: 0.5rem;
+--mb-0-75: 0.75rem;
+--mb-1: 1rem;
+--mb-1-5: 1.5rem;
+--mb-2: 2rem;
+--mb-2-5: 2.5rem;
+--mb-3: 3rem;
+
+
+--space: 1rem;
+}
 html {
   overflow-x: hidden;
   box-sizing: border-box;
@@ -35,18 +78,18 @@ a {
 }
 
 p {
-  font-size: $font-p;
+  font-size: var(--font-p);
 }
 
 h1 {
-  font-size: $font-h1;
+  font-size: var(--font-h1);
 }
 h2 {
-  font-size: $font-h2;
+  font-size: var(--font-h2);
 }
 h3 {
-  font-size: $font-h3;
-  font-weight: lighter;
+  font-size: var(--font-h3);
+  font-weight: var(--lighter);
 }
 
 /* Burget button */
@@ -117,8 +160,8 @@ button {
 
 .button {
   font-size: 18px;
-  background: $color-action;
-  color: $color-text;
+  background: var(--color-action);
+  color: var(--color-text);
   padding: 0.75rem 3rem;
   border-radius: 0.5rem;
 }

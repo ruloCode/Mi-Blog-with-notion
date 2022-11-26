@@ -33,7 +33,7 @@
       text-decoration: underline;
       font-size: 1.6rem;
       margin-top: 0.5rem;
-      color: $base-color;
+      color: var(--base-color);
     }
   }
 }
@@ -52,22 +52,7 @@
 }
 
 .ocupation {
-  color: $base-color;
+  color: var(--base-color);
 }
 
-$breakpoints: (
-  sm: 540px,
-  md: 768px,
-  lg: 1024px,
-  xl: 1280px,
-);
 
-@mixin media-up($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media screen and (min-width: map-get($breakpoints,$breakpoint )) {
-      @content;
-    }
-  } @else {
-    @warn "The value '#{breakpoint}' has not been declared as a breakpoint";
-  }
-}

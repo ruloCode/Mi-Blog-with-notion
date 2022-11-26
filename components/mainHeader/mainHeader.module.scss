@@ -8,7 +8,7 @@
   position: fixed;
   top: 0;
 
-  z-index: $z-modal-2;
+  z-index: var(--z-modal-2);
 }
 
 .navContainer {

@@ -48,6 +48,21 @@
     color: var(--color-neutral);
     font-weight: var(--font-semi-bold);
   }
+  &-social--button {
+    margin-left: 24px;
+    left: 0;
+    gap: 16px;
+    align-items: center;
+
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+    z-index: var(--z-tooltip);
+
+    &-icon {
+      font-size: 3rem;
+      color: var(--color-text);
+    }
+  }
 
   @include media-up(md) {
     &-content {
@@ -58,6 +73,9 @@
     }
     &-img {
       flex-grow: 2/3;
+    }
+    &-social {
+      display: none;
     }
   }
 }

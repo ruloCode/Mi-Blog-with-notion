@@ -1,15 +1,14 @@
-@import '../../../styles/_variables.scss';
 
 .button {
   background: none;
   border: none;
   font-size: 18px;
-  background: $color-action;
-  color: $color-text;
+  background: var(--color-action);
+  color: var(--color-text);
   padding: 0.75rem 3rem;
   border-radius: 0.5rem;
   &--outline {
-    border: 1px solid $color-neutral;
+    border: 1px solid var(--color-neutral);
     background-color: transparent;
   }
 }
