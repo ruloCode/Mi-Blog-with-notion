@@ -1,8 +1,7 @@
-@import "../../styles/_variables.scss";
 @import "../../styles/_mixins.scss";
 .headerContainer {
   width: 100vw;
-  background: #0d1116;
+  // background: #0d1116;
 
   border: 1px solid blue($color: #000000);
   position: fixed;
@@ -18,7 +17,7 @@
   width: 100%;
 
   z-index: 10;
-  color: #fff;
+  // color: #fff;
   position: relative;
 
   /* Medium devices (landscape tablets, 768px and up) */
@@ -54,5 +53,10 @@
   display: flex;
   align-items: center;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
+
+  span {
+  font-weight: var(--font-weight-thin);
+
+  }
 }

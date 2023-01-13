@@ -44,12 +44,12 @@
 
 --space: 1rem;
 }
+
 html {
   overflow-x: hidden;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Roboto";
-  font-size: 62.5%;
+  font-family: var(--font-family-primary);
 }
 *,
 *::before,
@@ -60,9 +60,9 @@ html {
 }
 
 body {
-  background-color: #202833;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
+  background-color: var(--background-white-base);
+  font-family: var(--font-size-base);
+  color: var(--text-primary);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -73,24 +73,10 @@ body {
 } */
 
 a {
-  color: #2563eb;
   text-decoration: none;
 }
 
-p {
-  font-size: var(--font-p);
-}
 
-h1 {
-  font-size: var(--font-h1);
-}
-h2 {
-  font-size: var(--font-h2);
-}
-h3 {
-  font-size: var(--font-h3);
-  font-weight: var(--lighter);
-}
 
 /* Burget button */
 
@@ -109,9 +95,9 @@ h3 {
 
 .line {
   fill: none;
-  stroke: #fff;
+  stroke: var(--text-primary);
   stroke-miterlimit: 10;
-  stroke-width: 3px;
+  stroke-width: 1px;
 }
 
 path {
@@ -125,7 +111,7 @@ button {
 }
 
 .x .line {
-  stroke: #f77322;
+  stroke: var(--colors-primary);
 }
 
 .x #middle {
@@ -137,34 +123,7 @@ button {
   stroke-dashoffset: -45;
 }
 
-/*==================== REUSABLE CSS CLASSES ====================*/
-.section {
-  padding: 2rem 0 4rem;
-}
 
-.section__title {
-  font-size: var(--h1-font-size);
-  color: var(--title-color);
-}
-
-.section__subtitle {
-  display: block;
-  font-size: var(--small-font-size);
-  margin-bottom: var(--mb-3);
-}
-
-.section__title,
-.section__subtitle {
-  text-align: center;
-}
-
-.button {
-  font-size: 18px;
-  background: var(--color-action);
-  color: var(--color-text);
-  padding: 0.75rem 3rem;
-  border-radius: 0.5rem;
-}
 
 /*==================== LAYOUT ====================*/
 .container {
@@ -196,11 +155,3 @@ button {
   }
 }
 
-.header {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: var(--z-fixed);
-  background-color: var(--body-color);
-}

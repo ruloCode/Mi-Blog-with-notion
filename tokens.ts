@@ -1,0 +1,381 @@
+const choices = {
+  colors: {
+    brand: {
+      redTint: '#FF6464',
+      blueTint: '#00A8CC',
+      
+    },
+
+    transparent: 'transparent',
+
+    black: '#020202',
+    white: '#fafafa',
+
+    blue: {
+      0: '#EDF7FA',
+      // 5: '#e5eeff',
+      // 10: '#ccddff',
+      // 20: '#b1cbff',
+      // 30: '#80aaff',
+      // 40: '#80aaff',
+      // 50: '#1a66ff',
+      // 60: '#0055ff',
+      // 70: '#004ce6',
+      // 80: '#0044cc',
+      // 90: '#003bb3',
+      // 100: '#00308f',
+    },
+    cyan: {
+      0: '#f5fcff',
+      5: '#e5f7ff',
+      10: '#cceeff',
+      20: '#b3e5ff',
+      30: '#80d4ff',
+      40: '#4dc3ff',
+      50: '#1ab3ff',
+      60: '#00aaff',
+      70: '#0099e6',
+      80: '#0088cc',
+      90: '#0077b3',
+      100: '#006699',
+    },
+    green: {
+      0: '#e9fbf4',
+      5: '#bef4de',
+      10: '#93ecc8',
+      20: '#67e4b2',
+      30: '#3cdd9c',
+      40: '#26d991',
+      50: '#22c383',
+      60: '#1fad74',
+      70: '#1b9866',
+      80: '#178257',
+      90: '#136c49',
+      100: '#0f573a',
+    },
+    yellow: {
+      0: '#fff9e5',
+      5: '#ffedb3',
+      10: '#ffe180',
+      20: '#ffdb66',
+      30: '#ffd54d',
+      40: '#ffcf33',
+      50: '#ffc400',
+      60: '#e6b000',
+      70: '#cc9c00',
+      80: '#b38900',
+      90: '#997500',
+      100: '#8a6a00',
+    },
+    orange: {
+      0: '#ffeee5',
+      5: '#ffcdb3',
+      10: '#ffac80',
+      20: '#ff9c66',
+      30: '#ff8b4d',
+      40: '#ff7a33',
+      50: '#ff6a1a',
+      60: '#ff5900',
+      70: '#e65000',
+      80: '#cc4700',
+      90: '#c24400',
+      100: '#a83b00',
+    },
+    red: {
+      0: '#ffe8e5',
+      5: '#ffb9b3',
+      10: '#ff8a7f',
+      20: '#ff7366',
+      30: '#ff5b4c',
+      40: '#ff4433',
+      50: '#ff6a1a',
+      60: '#ff1500',
+      70: '#e61300',
+      80: '#cc1100',
+      90: '#b30f00',
+      100: '#990d00',
+    },
+    purple: {
+      0: '#f6edf8',
+      5: '#e4c8e9',
+      10: '#d2a3db',
+      20: '#c991d4',
+      30: '#c07fcd',
+      40: '#b76dc5',
+      50: '#ae5abe',
+      60: '#a548b7',
+      70: '#9441a5',
+      80: '#843a92',
+      90: '#763484',
+      100: '#632b6e',
+    },
+    violet: {
+      0: '#f0ecf9',
+      5: '#d2c6ec',
+      10: '#b59fdf',
+      20: '#a68cd9',
+      30: '#9779d2',
+      40: '#8866cc',
+      50: '#7953c6',
+      60: '#6a40bf',
+      70: '#6039ac',
+      80: '#513091',
+      90: '#462a7e',
+      100: '#372163',
+    },
+    gray: {
+      0: '#21243D',
+      5: '#8695A4',
+      // 5: '#f1f3f4',
+      // 10: '#e2e6e9',
+      // 20: '#cbd3d7',
+      // 30: '#bac4ca',
+      // 40: '#a0aeb6',
+      // 50: '#8698a2',
+      // 60: '#6a7f8a',
+      // 70: '#4f6672',
+      // 80: '#3d515c',
+      // 90: '#2c3f49',
+      // 100: '#20323c',
+    },
+    pink: {
+      0: '#fce8f2',
+      5: '#fad1e5',
+      10: '#f7bad9',
+      20: '#f28dbf',
+      30: '#ef6cad',
+      40: '#ef6cad',
+      50: '#e8318c',
+      60: '#e51a90',
+      70: '#ce1791',
+      80: '#ae147b',
+      90: '#97116a',
+      100: '#800e5a',
+    },
+  },
+  spacing: {
+    5: '0.25rem',
+    10: '0.5rem',
+    15: '0.75rem',
+    20: '1rem',
+    30: '1.5rem',
+    40: '3rem',
+    50: '4rem',
+  },
+  screens: {
+    xs: '420px',
+    sm: '640px',
+    md: '768px',
+    lg: '1024px',
+    xl: '1280px',
+    max: {
+      xs: '419px',
+      sm: '639px',
+      md: '767px',
+      lg: '1023px',
+      xl: '1279px',
+    },
+  },
+  fontFamily: {
+    primary: ['"Heebo"', 'sans-serif'],
+    secondary: ['"Roboto"', 'sans-serif'],
+  },
+  lineHeight: {
+    0: 1,
+    1: 1.25,
+    2: 1.5,
+    3: 'auto',
+  },
+  fontWeight: {
+    thin: 300,
+    normal: 400,
+    semibold: 600,
+    bold: 700,
+  },
+  fontSize: {
+    base: '16px',
+    0: '.75rem',
+    1: '.875rem',
+    2: '1rem',
+    3: '1.25rem',
+    4: '1.5rem',
+    5: '2rem',
+    6: '2.5rem',
+    7: '4rem',
+  },
+
+  textCase: {
+    uppercase: 'uppercase',
+    none: 'none',
+  },
+  textDecoration: {
+    none: 'none',
+  },
+
+  letterSpacing: {
+    0: '-6%',
+    1: '-2%',
+    2: '-1%',
+    3: '0%',
+  },
+  // prettier-ignore
+  shadows: {
+      outline: "0 0 0 3px rgba(66, 153, 225, 0.5)",
+      none: 'none',
+      down: {
+        sm: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+        md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+        lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+        xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+        "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+        inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)"
+      },
+      up: {
+        sm: "0 -1px 3px 0 rgba(0, 0, 0, 0.1), 0 -1px 2px 0 rgba(0, 0, 0, 0.06)",
+        md: "0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -1px rgba(0, 0, 0, 0.06)",
+        lg: "0 -10px 15px -3px rgba(0, 0, 0, 0.1), 0 -4px 6px -2px rgba(0, 0, 0, 0.05)",
+        xl: "0 -20px 25px -5px rgba(0, 0, 0, 0.1), 0 -10px 10px -5px rgba(0, 0, 0, 0.04)",
+        "2xl": "0 -25px 50px -12px rgba(0, 0, 0, 0.25)",
+        inner: "inset 0 -2px 4px 0 rgba(0, 0, 0, 0.06)",
+      }
+    },
+  minHeight: {
+    '0': '0',
+    full: '100%',
+    screen: '100vh',
+  },
+  minWidth: {
+    '0': '0',
+    full: '100%',
+  },
+  opacity: {
+    '0': '0',
+    '25': '0.25',
+    '50': '0.5',
+    '75': '0.75',
+    '100': '1',
+  },
+  borderRadius: {
+    none: '0',
+    small: '0.125rem',
+    medium: '0.5rem',
+    large: '1rem',
+    xlarge: '2rem',
+  },
+  border: {
+    small: '1px',
+    medium: '2px',
+    large: '3px',
+  },
+  zIndex: {
+    auto: 'auto',
+    '0': '0',
+    '10': '10',
+    '20': '20',
+    '30': '30',
+    '40': '40',
+    '50': '50',
+  },
+};
+
+const decisions = {
+  // colors
+  colors: {
+    primary: choices.colors.brand.redTint,
+    secondary: choices.colors.brand.blueTint,
+  },
+  text: {
+    primary: choices.colors.gray[0],
+    secondary: choices.colors.brand.blueTint,
+   
+  },
+  background: {
+    dark: {
+      base: choices.colors.brand.darkBlue,
+      // hover: choices.colors.brand.darkBlueTint,
+    },
+    white: {
+      base: choices.colors.white,
+      // hover: choices.colors.brand.darkBlueTint,
+    },
+    feedback: {
+      success: choices.colors.green[0],
+      error: choices.colors.red[0],
+      info: choices.colors.cyan[5],
+      notification: choices.colors.orange[50],
+    },
+    action: {
+      primary: {
+        base: choices.colors.cyan[70],
+        hover: choices.colors.cyan[80],
+        active: choices.colors.cyan[90],
+        disable: choices.colors.cyan[30],
+      },
+
+      destructive: {
+        base: choices.colors.red[70],
+        hover: choices.colors.red[80],
+        active: choices.colors.red[90],
+        disable: choices.colors.red[20],
+      },
+      ghost: {
+        hover: choices.colors.cyan[5],
+        active: choices.colors.cyan[10],
+      },
+      ghostDestructive: {
+        hover: choices.colors.red[0],
+        active: choices.colors.red[5],
+      },
+      ghostPlain: {
+        hover: choices.colors.gray[0],
+        active: choices.colors.gray[5],
+      },
+    },
+  },
+
+  border: {
+    card: {
+      active: choices.colors.cyan[50],
+      inactive: choices.colors.cyan[30],
+    },
+    toast: {
+      success: choices.colors.green[60],
+      info: choices.colors.cyan[60],
+      error: choices.colors.red[60],
+    },
+    button: {
+      secondary: choices.colors.cyan[70],
+    },
+    input: {
+      default: choices.colors.gray[20],
+      hover: choices.colors.gray[40],
+      focus: choices.colors.cyan[50],
+      success: {
+        base: choices.colors.green[50],
+        hover: choices.colors.green[50],
+      },
+      error: {
+        base: choices.colors.red[50],
+        hover: choices.colors.red[80],
+      },
+    },
+  },
+
+  textStyle: {
+    overline: {
+      fontFamily: choices.fontFamily.openSans,
+      fontWeight: choices.fontWeight.bold,
+      lineHeight: choices.lineHeight[0],
+      fontSize: choices.fontSize[1],
+      letterSpacing: choices.letterSpacing[0],
+      // paragraphIndent
+      textCase: choices.textCase.uppercase,
+      textDecoration: choices.textDecoration.none,
+    },
+  },
+};
+
+module.exports = {
+  choices,
+  decisions,
+};

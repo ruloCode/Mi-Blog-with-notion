@@ -27,7 +27,9 @@ export const MainHeader = () => {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.navContainer}>
-        <div className={styles.logo}>RuloCode</div>
+        <div className={styles.logo}>Rulo
+        <span>Code</span>.com
+        </div>
 
       <Navbar />
       <HamburgerButton handleClick={handleClose} isOpen={openHamburger} />

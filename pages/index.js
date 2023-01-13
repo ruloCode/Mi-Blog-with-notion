@@ -20,7 +20,7 @@ export default function Home({ posts }) {
       </Head>
 
       <main className={styles.container}>
-       <Hero />
+       {/* <Hero /> */}
 
        {/* <About />
        <Portfolio /> */}

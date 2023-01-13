@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build-custom-properties": "node ./scripts/build-tokens.ts"
+
   },
   "dependencies": {
     "@chakra-ui/button": "^2.0.9",

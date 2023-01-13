@@ -1,4 +1,5 @@
 import { Layout } from "../components/layout/Layout";
+import "../styles/tokens.css";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
