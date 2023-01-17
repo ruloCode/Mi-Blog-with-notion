@@ -1,23 +1,33 @@
-@import "../../styles/_mixins.scss";
 .navbar {
   list-style: none;
 
   display: none;
 
-  @include media-up(md) {
-    display: flex;
-    display: flex;
-    align-items: center;
-    gap: var(--space);
-    justify-content: space-around;
+
+  
+
+      @media only screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-30);
+        justify-content: flex-end;
+        }
+  &__item {
+    color: var(--colors-black);
+    font-weight: var(--font-weight-normal);
+    p {
+  border-bottom: 1px solid transparent;
+  transition: .5s;
+}
+    
+    p:hover {
+border-bottom: 1px solid var(--colors-black);
+font-weight: var(--font-weight-semibold);
+
+
+      }
   }
 
-  &__item {
-    a {
-      color: #fff;
-    }
-    p {
-      color: #fff;
-    }
-  }
+
+
 }

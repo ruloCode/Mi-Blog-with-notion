@@ -3,8 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: var(--z-index-40);
+
   height: 100%;
-  z-index: var(--z-modal);
   position: relative;
 
   ul {

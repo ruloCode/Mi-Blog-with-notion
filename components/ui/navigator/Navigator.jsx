@@ -5,10 +5,10 @@ export const Navigator = () => {
     <nav className={styles.navigator}>
       <ul>
         <li>
-          <a href="#about">About me</a>
+          <a href="#about">Works</a>
         </li>
         <li>
-        <a href="#about">Portfolio</a>
+        <a href="#about">Blog</a>
         </li>
         <li>
         <a href="#about">Contact</a>

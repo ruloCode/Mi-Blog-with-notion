@@ -43,7 +43,6 @@
   &-container {
     position: fixed;
     bottom: 0;
-    z-index: var(--z-modal);
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -52,7 +51,6 @@
     transition: background-color 0.25s ease;
 
     &--open {
-    z-index: var(--z-modal);
 
       position: fixed;
       width: 100%;
@@ -77,6 +75,7 @@
     background-color: #0D1116;
     height: 100vh;
     display: flex;
+
     flex-direction: column;
     justify-content: space-between;
 

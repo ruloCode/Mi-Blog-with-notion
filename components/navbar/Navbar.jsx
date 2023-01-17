@@ -6,17 +6,17 @@ export const Navbar = () => {
     <ul className={styles.navbar}>
       <li>
         <a className={styles.navbar__item} href="#about">
-          <p>About </p>
+          <p>Works </p>
         </a>
       </li>
       <li>
         <a className={styles.navbar__item} href="#about">
-          <p>Projects </p>
+          <p>Blog </p>
         </a>
       </li>
       <li>
         <a  className={styles.navbar__item} href="#about">
-          <p>Connect</p>
+          <p>Contact</p>
         </a>
       </li>
     </ul>

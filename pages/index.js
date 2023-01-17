@@ -1,13 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
-import { getDatabase } from "../lib/notion";
-import { Text } from "./[id].js";
-import ProfilePhoto from "../assets/rulo.png";
 
 import styles from "./index.module.scss";
-import { Hero } from "../components/hero/Hero";
-import { About } from "../components/about/About";
-import { Portfolio } from "../components/portfolio/Portfolio";
+// import { Hero } from "../components/hero/Hero";
+
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
@@ -59,13 +55,3 @@ export default function Home({ posts }) {
   );
 }
 
-export const getStaticProps = async () => {
-  const database = await getDatabase(databaseId);
-
-  return {
-    props: {
-      posts: database,
-    },
-    revalidate: 1,
-  };
-};
