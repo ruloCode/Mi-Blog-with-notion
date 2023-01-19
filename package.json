@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "prepare": "husky install",
     "lint:css": "stylelint './**/*.scss'",
     "build-custom-properties": "node ./scripts/build-tokens.ts"
   },
