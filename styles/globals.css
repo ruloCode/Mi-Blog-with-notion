@@ -2,31 +2,28 @@
 
 :root {
   --font-p: 1.8rem;
-  
 --font-h1: 3rem;
 --font-h2: 2.4rem;
 --font-h3: 2rem;
-
 --base-color: #06c5ff;
-
 --color-background: #202833;
 --color-background-second: #090c0f;
-
 --color-neutral: #e1e3e8;
 --color-purple: #6a70ff;
 --color-action: #06c5ff;
 --color-text: #f2f2f2;
 
-/*========== Font and typography ==========*/
+/* ========== Font and typography ========== */
 --body-font: "Roboto", sans-serif;
 
-/*========== Font weight ==========*/
+/* ========== Font weight ========== */
 --font-medium: 500;
 --font-semi-bold: 600;
 
 
 
-/*========== Margenes Bottom ==========*/
+/* ========== Margenes Bottom ========== */
+
 /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
 --mb-0-25: 0.25rem;
 --mb-0-5: 0.5rem;
@@ -36,8 +33,6 @@
 --mb-2: 2rem;
 --mb-2-5: 2.5rem;
 --mb-3: 3rem;
-
-
 --space: 1rem;
 }
 
@@ -47,6 +42,7 @@ html {
   scroll-behavior: smooth;
   font-family: var(--font-family-primary);
 }
+
 *,
 *::before,
 *::after {
@@ -85,6 +81,7 @@ a {
   opacity: 1;
   transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 #Layer_1 {
   margin-top: 4px;
 }
@@ -105,10 +102,12 @@ button {
   background: none;
   border: none;
 }
+
 .x {
   position: relative;
   z-index: var(--z-index-50);
 }
+
 .x .line {
   stroke: var(--colors-primary);
 }
@@ -124,7 +123,7 @@ button {
 
 
 
-/*==================== LAYOUT ====================*/
+/* ==================== LAYOUT ==================== */
 .container {
   max-width: 768px;
   margin-left: var(--mb-1-5);
@@ -135,9 +134,10 @@ button {
   display: grid;
   gap: 1.5rem;
 }
-.wrapper {
 
+.wrapper {
   position: relative;
+
   --wrapper-width: 95%;
 
   padding-right: calc(50vw - (var(--wrapper-width) / 2));

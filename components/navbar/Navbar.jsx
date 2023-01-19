@@ -1,4 +1,3 @@
-import React from "react";
 import styles from './Navbar.module.scss'
 
 export const Navbar = () => {
@@ -15,12 +14,12 @@ export const Navbar = () => {
         </a>
       </li>
       <li>
-        <a  className={styles.navbar__item} href="#about">
+        <a className={styles.navbar__item} href="#about">
           <p>Contact</p>
         </a>
       </li>
     </ul>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

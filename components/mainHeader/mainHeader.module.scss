@@ -23,11 +23,9 @@
   // @media (min-width: 768px) {
   // }
 
- 
-
   @media only screen and (min-width: 768px) {
     grid-template-columns: auto auto 60px;
-    }
+  }
 
   --wrapper-width: 95%;
 
@@ -49,21 +47,20 @@
 
 /*Styling logo*/
 .logo {
- opacity: 0;
+  opacity: 0;
 
   @media only screen and (min-width: 640px) {
     padding: 1vh 1vw;
     text-align: center;
     display: flex;
     align-items: center;
- opacity: 1;
+    opacity: 1;
 
     font-size: 18px;
     font-weight: var(--font-weight-semibold);
-  
+
     span {
-    font-weight: var(--font-weight-thin);
-  
+      font-weight: var(--font-weight-thin);
     }
   }
 }
