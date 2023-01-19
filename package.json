@@ -15,18 +15,19 @@
       "pre-commit": "lint-staged"
     }
   },
- 
   "lint-staged": {
-    "*.+(js|jsx)": [
+    "*.+(js|ts|tsx)": [
       "eslint"
     ],
     "**/*.+(js|jsx|ts|tsx)": [
       "prettier --write"
     ],
     "src/**/*.{scss,css}": [
-      "stylelint --config=.stylelintrc.json --fix"
+      "stylelint --config=.stylelintrc --fix"
     ]
   },
+ 
+ 
   "dependencies": {
     "@chakra-ui/button": "^2.0.9",
     "@notionhq/client": "^0.4.4",

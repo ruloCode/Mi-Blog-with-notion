@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import Link from "next/link";
+import React, { useState } from 'react';
+import Link from 'next/link';
 
-import classnames from "classnames";
-import { getClasses } from "../../utils/classesFormater";
+import classnames from 'classnames';
+import { getClasses } from '../../utils/classesFormater';
 
-import styles from "./mainHeader.module.scss";
-import { HamburgerButton } from "../ui/hamburgerButton/HamburgerButton";
-import { SlideOutMenu } from "../ui/slideOutMenu/SlideOutMenu.tsx";
-import sleep from "../../utils/hooks/sleep";
-import {Navbar} from "../navbar/Navbar";
+import styles from './mainHeader.module.scss';
+import { HamburgerButton } from '../ui/hamburgerButton/HamburgerButton';
+import { SlideOutMenu } from '../ui/slideOutMenu/SlideOutMenu.tsx';
+import sleep from '../../utils/hooks/sleep';
+import { Navbar } from '../navbar/Navbar';
 
 export const MainHeader = () => {
   const [openHamburger, setOpenHamburger] = useState(false);
@@ -27,13 +27,13 @@ export const MainHeader = () => {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.navContainer}>
-        <div className={styles.logo}>Rulo
-        <span>Code</span>.com
+        <div className={styles.logo}>
+          Rulo
+          <span>Code</span>.com
         </div>
 
-      <Navbar />
-      <HamburgerButton handleClick={handleClose} isOpen={openHamburger} />
-
+        <Navbar />
+        <HamburgerButton handleClick={handleClose} isOpen={openHamburger} />
 
         <SlideOutMenu
           title="Filtros"
@@ -41,8 +41,8 @@ export const MainHeader = () => {
           isOpen={openHamburger}
           width={305}
           attributes={{
-            ariaLabel: "Cerrar carrito",
-            title: "Cerrar carrito",
+            ariaLabel: 'Cerrar carrito',
+            title: 'Cerrar carrito',
           }}
           hiding={hiding}
           handleClose={handleClose}
