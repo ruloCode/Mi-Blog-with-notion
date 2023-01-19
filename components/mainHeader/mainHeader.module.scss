@@ -23,14 +23,16 @@
   // @media (min-width: 768px) {
   // }
 
-  @media only screen and (min-width: 768px) {
-    grid-template-columns: auto auto 60px;
-  }
 
-  --wrapper-width: 95%;
+
+  --wrapper-width: 70%;
 
   padding-right: calc(50vw - (var(--wrapper-width) / 2));
   padding-left: calc(50vw - (var(--wrapper-width) / 2));
+
+  @media only screen and (min-width: 640px) {
+      padding-left: calc(50vw - (var(--wrapper-width) / 2.5));
+  }
 
   &--hasBackground {
     background-color: #f9fafb;
@@ -50,7 +52,6 @@
   opacity: 0;
 
   @media only screen and (min-width: 640px) {
-    padding: 1vh 1vw;
     text-align: center;
     display: flex;
     align-items: center;

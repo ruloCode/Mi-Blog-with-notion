@@ -11,7 +11,7 @@
   }
   &__item {
     color: var(--colors-black);
-    font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-semibold);
     p {
       border-bottom: 1px solid transparent;
       transition: 0.5s;
@@ -19,7 +19,7 @@
 
     p:hover {
       border-bottom: 1px solid var(--colors-black);
-      font-weight: var(--font-weight-semibold);
+      font-weight: var(--font-weight-bold);
     }
   }
 }

@@ -39,7 +39,7 @@ export const Footer = () => {
           <i className="fa-brands fa-twitter"></i>
         </a>
       </div>
-      <p>© All rights reserved 2022</p>
+      <p>© Made with love</p>
     </section>
   );
 };

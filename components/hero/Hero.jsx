@@ -3,10 +3,8 @@ import React from 'react';
 import Image from 'next/image';
 
 import styles from './Hero.module.scss';
-import BackgroundShape from '../../assets/Fondo.svg';
-import ProfilePhoto from '../../assets/rulo_profile.jpg';
+import ProfilePhoto from '../../assets/rulo_profile.webp';
 import { Button } from '../ui/button/Button';
-import { Box, Flex, Grid } from '@vitau/layout';
 
 export const Hero = () => {
   return (
@@ -30,11 +28,11 @@ export const Hero = () => {
               Creating the next web generation. I want to make sure that the
               internet is a safe, satisfying and secure place for everyone.
             </p>
-            <Flex justifyContent="center">
+            <div className={styles['hero-action']}>
               <Button handleClick={() => window.location.replace('#footer')}>
-                Let's Talk
+                Download Resume
               </Button>
-            </Flex>
+            </div>
           </div>
         </div>
       </section>

@@ -6,9 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "commit": "git-cz",
     "prepare": "husky install",
     "lint:css": "stylelint './**/*.scss'",
     "build-custom-properties": "node ./scripts/build-tokens.ts"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "husky": {
     "hooks": {
@@ -26,13 +32,13 @@
       "stylelint --config=.stylelintrc --fix"
     ]
   },
- 
- 
   "dependencies": {
     "@chakra-ui/button": "^2.0.9",
     "@notionhq/client": "^0.4.4",
     "@vitau/layout": "^1.1.0",
     "classnames": "^2.3.1",
+    "commitizen": "^4.2.6",
+    "cz-conventional-changelog": "^3.3.0",
     "next": "12.0.1",
     "react": "17.x",
     "react-dom": "17.x",
@@ -58,5 +64,8 @@
     "stylelint-config-standard-scss": "^6.1.0",
     "stylelint-prettier": "^1.2.0",
     "stylelint-scss": "^4.3.0"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }

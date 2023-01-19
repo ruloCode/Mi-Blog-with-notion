@@ -31,3 +31,25 @@
     font-size: var(--font-size-5);
   }
 }
+
+
+@media only screen and (min-width: 640px) {
+  .hero {
+    text-align: left;
+    &-content {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 20%;
+
+
+    }
+    &-img {
+      width: 230px;
+      height: 230px;
+    }
+    &-data {
+    max-width: 500px;
+
+    }
+  }
+}
