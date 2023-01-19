@@ -1,39 +1,35 @@
-
-
 :root {
   --font-p: 1.8rem;
---font-h1: 3rem;
---font-h2: 2.4rem;
---font-h3: 2rem;
---base-color: #06c5ff;
---color-background: #202833;
---color-background-second: #090c0f;
---color-neutral: #e1e3e8;
---color-purple: #6a70ff;
---color-action: #06c5ff;
---color-text: #f2f2f2;
+  --font-h1: 3rem;
+  --font-h2: 2.4rem;
+  --font-h3: 2rem;
+  --base-color: #06c5ff;
+  --color-background: #202833;
+  --color-background-second: #090c0f;
+  --color-neutral: #e1e3e8;
+  --color-purple: #6a70ff;
+  --color-action: #06c5ff;
+  --color-text: #f2f2f2;
 
-/* ========== Font and typography ========== */
---body-font: "Roboto", sans-serif;
+  /* ========== Font and typography ========== */
+  --body-font: "Roboto", sans-serif;
 
-/* ========== Font weight ========== */
---font-medium: 500;
---font-semi-bold: 600;
+  /* ========== Font weight ========== */
+  --font-medium: 500;
+  --font-semi-bold: 600;
 
+  /* ========== Margenes Bottom ========== */
 
-
-/* ========== Margenes Bottom ========== */
-
-/* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
---mb-0-25: 0.25rem;
---mb-0-5: 0.5rem;
---mb-0-75: 0.75rem;
---mb-1: 1rem;
---mb-1-5: 1.5rem;
---mb-2: 2rem;
---mb-2-5: 2.5rem;
---mb-3: 3rem;
---space: 1rem;
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+  --space: 1rem;
 }
 
 html {
@@ -68,8 +64,6 @@ a {
   text-decoration: none;
 }
 
-
-
 /* Burget button */
 
 #top,
@@ -90,7 +84,7 @@ a {
   fill: none;
   stroke: var(--text-primary);
   stroke-miterlimit: 10;
-  stroke-width: 1px;
+  stroke-width: 1.6px;
 }
 
 path {
@@ -121,8 +115,6 @@ button {
   stroke-dashoffset: -45;
 }
 
-
-
 /* ==================== LAYOUT ==================== */
 .container {
   max-width: 768px;
@@ -143,7 +135,7 @@ button {
   padding-right: calc(50vw - (var(--wrapper-width) / 2));
   padding-left: calc(50vw - (var(--wrapper-width) / 2));
 
-  
+
 
   @media only screen and (min-width: 1280px) {
     --wrapper-width: 1216px;
@@ -153,4 +145,3 @@ button {
     --wrapper-width: 1440px;
   }
 }
-

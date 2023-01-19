@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from './index.module.scss'
-// import { Hero } from "../components/hero/Hero";
+import { Hero } from '../components/hero/Hero'
 
 export const databaseId = process.env.NOTION_DATABASE_ID
 
@@ -13,7 +13,7 @@ export default function Home ({ posts }) {
       </Head>
 
       <main className={styles.container}>
-        {/* <Hero /> */}
+        <Hero />
 
         {/* <About />
        <Portfolio /> */}

@@ -1,7 +1,7 @@
-import React from 'react'
-import { MainHeader } from '../mainHeader/MainHeader'
-import { Footer } from '../footer/Footer'
-import styles from './Layout.module.scss'
+import React from 'react';
+import { MainHeader } from '../mainHeader/MainHeader';
+import { Footer } from '../footer/Footer';
+import styles from './Layout.module.scss';
 
 export const Layout = ({ children }) => {
   return (
@@ -12,8 +12,8 @@ export const Layout = ({ children }) => {
         <div className={styles.appContainer}>{children}</div>
 
         {/* <div>footer</div> */}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
-  )
-}
+  );
+};
