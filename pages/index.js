@@ -1,13 +1,10 @@
-import Head from "next/head";
-import Link from "next/link";
-
-import styles from "./index.module.scss";
+import Head from 'next/head'
+import styles from './index.module.scss'
 // import { Hero } from "../components/hero/Hero";
 
+export const databaseId = process.env.NOTION_DATABASE_ID
 
-export const databaseId = process.env.NOTION_DATABASE_ID;
-
-export default function Home({ posts }) {
+export default function Home ({ posts }) {
   return (
     <>
       <Head>
@@ -16,9 +13,9 @@ export default function Home({ posts }) {
       </Head>
 
       <main className={styles.container}>
-       {/* <Hero /> */}
+        {/* <Hero /> */}
 
-       {/* <About />
+        {/* <About />
        <Portfolio /> */}
 
         {/* <h2 className={styles.heading}>All Posts</h2>
@@ -52,6 +49,5 @@ export default function Home({ posts }) {
         </ol> */}
       </main>
     </>
-  );
+  )
 }
-
