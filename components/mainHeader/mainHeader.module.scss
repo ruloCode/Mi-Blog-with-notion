@@ -3,34 +3,32 @@
   // background: #0d1116;
 
   border: 1px solid blue($color: #000000);
-  position: fixed;
+  position: sticky;
   top: 0;
 
-  z-index: var(--z-modal-2);
+  z-index: var(--z-index-30);
 }
 
 .navContainer {
-  height: 6rem;
+  height: 3.7rem;
+  padding-top: var(--spacing-10);
   display: grid;
   grid-template-columns: auto 60px;
   width: 100%;
 
   z-index: 10;
-  // color: #fff;
   position: relative;
 
-  /* Medium devices (landscape tablets, 768px and up) */
-  // @media (min-width: 768px) {
-  // }
 
 
 
-  --wrapper-width: 70%;
+  --wrapper-width: 90%;
 
   padding-right: calc(50vw - (var(--wrapper-width) / 2));
   padding-left: calc(50vw - (var(--wrapper-width) / 2));
 
-  @media only screen and (min-width: 640px) {
+  @media only screen and (min-width: 1024px) {
+    --wrapper-width: 70%;
       padding-left: calc(50vw - (var(--wrapper-width) / 2.5));
   }
 

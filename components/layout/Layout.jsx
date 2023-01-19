@@ -1,7 +1,6 @@
 import React from 'react';
 import { MainHeader } from '../mainHeader/MainHeader';
 import { Footer } from '../footer/Footer';
-import styles from './Layout.module.scss';
 
 export const Layout = ({ children }) => {
   return (
@@ -9,9 +8,8 @@ export const Layout = ({ children }) => {
       <MainHeader />
 
       <div>
-        <div className={styles.appContainer}>{children}</div>
+        {children}
 
-        {/* <div>footer</div> */}
         <Footer />
       </div>
     </>

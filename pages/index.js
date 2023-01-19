@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from './index.module.scss'
 import { Hero } from '../components/hero/Hero'
 
 export const databaseId = process.env.NOTION_DATABASE_ID
@@ -12,7 +11,7 @@ export default function Home ({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.container}>
+      <main>
         <Hero />
 
         {/* <About />

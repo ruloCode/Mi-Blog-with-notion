@@ -1,12 +1,11 @@
 
 .hero {
-  margin-top: 80px;
+  margin-top: var(--spacing-10);
   position: relative;
   text-align: center;
   &-content {
     display: flex;
     flex-direction: column;
-    padding-top: 3.5rem;
     align-items: center;
     position: relative;
   }
@@ -18,7 +17,6 @@
     display: flex;
     justify-content: center;
 
-    border-radius: 500px;
     overflow: hidden;
   }
   &-data {
@@ -33,9 +31,11 @@
 }
 
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 768px) {
   .hero {
     text-align: left;
+  margin-top: var(--spacing-40);
+
     &-content {
     flex-direction: row-reverse;
     justify-content: flex-end;

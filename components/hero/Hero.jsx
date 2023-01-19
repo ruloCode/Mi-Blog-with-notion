@@ -8,7 +8,7 @@ import { Button } from '../ui/button/Button';
 
 export const Hero = () => {
   return (
-    <div>
+    <div className="wrapper">
       <section className={styles.hero}>
         <div className={styles['hero-content']}>
           <div className={styles['hero-img']}>
