@@ -28,10 +28,12 @@ export const Hero = () => {
               Creating the next web generation. I want to make sure that the
               internet is a safe, satisfying and secure place for everyone.
             </p>
+
+            {/* cambiar boton cuando se descarga que el boton cambie a about me */}
             <div className={styles['hero-action']}>
-              <Button handleClick={() => window.location.replace('#footer')}>
-                Download Resume
-              </Button>
+              {/* <a href="andres_santana_CV_compressed.pdf" download> */}
+              <Button>About me</Button>
+              {/* </a> */}
             </div>
           </div>
         </div>
