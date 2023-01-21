@@ -1,4 +1,8 @@
 import Head from 'next/head'
+import Link from 'next/link'
+
+import { getAllPublished } from '../lib/notion'
+
 import { Hero } from '../components/hero/Hero'
 
 export const databaseId = process.env.NOTION_DATABASE_ID
@@ -14,6 +18,19 @@ export default function Home ({ posts }) {
       <main>
         <Hero />
 
+        {posts.map((post, index) => (
+          <section key={index}>
+            <div>
+              <h2>
+                <Link href={`/posts/${post.slug}`}>
+                  <a>{post.title}</a>
+                </Link>
+              </h2>
+              <div>{post.date}</div>
+            </div>
+            <p>{post.description}</p>
+          </section>
+        ))}
         {/* <About />
        <Portfolio /> */}
 
@@ -49,4 +66,14 @@ export default function Home ({ posts }) {
       </main>
     </>
   )
+}
+
+export const getStaticProps = async () => {
+  const data = await getAllPublished()
+  return {
+    props: {
+      posts: data
+    },
+    revalidate: 60
+  }
 }

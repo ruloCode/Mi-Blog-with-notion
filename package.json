@@ -34,7 +34,6 @@
   },
   "dependencies": {
     "@chakra-ui/button": "^2.0.9",
-    "@notionhq/client": "^0.4.4",
     "@vitau/layout": "^1.1.0",
     "classnames": "^2.3.1",
     "commitizen": "^4.2.6",
@@ -43,7 +42,10 @@
     "react": "17.x",
     "react-dom": "17.x",
     "sass": "^1.54.5",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "notion-to-md": "^2.5.5",
+    "@notionhq/client": "^2.2.1",
+    "react-markdown": "^8.0.3"
   },
   "devDependencies": {
     "css-loader": "^6.7.2",
